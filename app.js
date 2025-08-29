@@ -14,6 +14,7 @@ let week_data = []
 
 change.addEventListener("click", ()=>{
     ch = !ch;   
+    change.innerText = ch ? "Switch to °C" : "Switch to °F";
     if(data){   
         hour.innerHTML = "";
         week.innerHTML = "";
@@ -77,5 +78,6 @@ const getData = async () =>{
         }
     })
 }
+
 
 getData()
