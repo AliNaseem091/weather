@@ -148,7 +148,14 @@ outline: none;
 }
 
 /* Phones (max-width: 480px) */
+/* Phones (max-width: 480px) */
 @media (max-width: 480px) {
+    body {
+        height: auto;          /* allow content to expand */
+        align-items: flex-start; /* stop vertical centering */
+        padding: 1rem 0;       /* give breathing space */
+    }
+
     .container {
         width: 95vw;
     }
@@ -156,6 +163,7 @@ outline: none;
     .search {
         flex-direction: column;
         align-items: center;
+        margin-top: 1rem;
     }
 
     .bar {
@@ -192,6 +200,7 @@ outline: none;
     }
 }
 
+
 /* Extra Small Phones (max-width: 360px) */
 @media (max-width: 360px) {
     .container {
@@ -210,3 +219,4 @@ outline: none;
         font-size: 1.3rem;
     }
 }
+
